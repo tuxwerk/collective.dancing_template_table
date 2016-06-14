@@ -3,7 +3,7 @@
    This text does not appear on pypi or github. It is a comment.
 
 ==============================================================================
-collective.dancing.template_table
+collective.dancing_template_table
 ==============================================================================
 
 Adds TABLE-based template to Singing & Dancing (https://github.com/collective/collective.dancing)
@@ -11,14 +11,14 @@ Adds TABLE-based template to Singing & Dancing (https://github.com/collective/co
 Installation
 ------------
 
-Install collective.dancing.template_table by adding it to your buildout::
+Install collective.dancing_template_table by adding it to your buildout::
 
     [buildout]
 
     ...
 
     eggs =
-        collective.dancing.template_table
+        collective.dancing_template_table
 
 
 and then running ``bin/buildout``
