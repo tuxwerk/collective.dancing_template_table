@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="collective.dancing_template_table"
+      interface="collective.dancing_template_table.interfaces.ICollectiveDancingTemplateTableLayer"
+      />
+</layers>

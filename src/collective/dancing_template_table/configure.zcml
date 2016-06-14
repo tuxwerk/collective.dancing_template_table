@@ -1,0 +1,37 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n">
+
+  <includeDependencies package="." />
+
+  <include package=".browser" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.dancing_template_table"
+      directory="profiles/default"
+      description="TABLE-based template for Singing &amp; Dancing"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.dancing_template_table (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the collective.dancing_template_table add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="collective.dancing_template_table-hiddenprofiles" />
+
+  <utility
+      component=".composer.template_table"
+      name="table"
+      provides="collective.dancing.interfaces.IHTMLComposerTemplate" />
+
+</configure>
