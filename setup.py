@@ -39,7 +39,9 @@ setup(
     zip_safe=False,
     install_requires=[
         'plone.api',
+        'Products.GenericSetup',
         'setuptools',
+        'z3c.jbot',
         'collective.dancing',
     ],
     extras_require={

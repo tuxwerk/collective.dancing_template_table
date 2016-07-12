@@ -13,7 +13,6 @@
       directory="profiles/default"
       description="TABLE-based template for Singing &amp; Dancing"
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
@@ -22,7 +21,6 @@
       directory="profiles/uninstall"
       description="Uninstalls the collective.dancing_template_table add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.uninstall"
       />
 
   <utility
